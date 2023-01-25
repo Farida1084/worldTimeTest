@@ -1,3 +1,10 @@
+import Clock from "./Clock";
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
+      <Clock cityKey="london" />
+      <Clock cityKey="stockholm" />
+    </div>
+  );
 }
